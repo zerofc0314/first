@@ -1,0 +1,8 @@
+@charset "utf-8";
+body{background:url(../images/bgIndex_2048.jpg) 0 0 no-repeat;}
+@media screen and (max-width:2048px){
+body{background:url(../images/bgIndex_2048.jpg) 0 0 no-repeat;}
+}
+@media screen and (max-width:1920px){
+body{background:url(../images/bgIndex_1920.jpg) 0 0 no-repeat;}
+}

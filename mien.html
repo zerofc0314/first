@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>科普知识部分</title>
+         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no"/>
+        <meta http-equiv="imagetoolbar" content="no"/>  
+        <link type="text/css" rel="stylesheet" href="statics/css/swiper.min.css"/>
+        <script type="text/javascript" src="statics/js/jquery-1.10.2.js"></script> 
+        <script type="text/javascript" src="statics/js/swiper.min.js"></script>
+        <script type="text/javascript" src="statics/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+	<link rel="stylesheet" type="text/css" href="statics/source/jquery.fancybox.css?v=2.1.5" media="screen" />
+         <link type="text/css" rel="stylesheet" href="statics/css/animate.css"/>
+        <script type="text/javascript">
+            $(".fancybox-effects-d").fancybox({
+                padding: 0,
+                openEffect : 'elastic',
+                openSpeed  : 150,
+                closeEffect : 'elastic',
+                closeSpeed  : 150,
+                closeClick : true,
+                helpers : {
+                        speedOut : 0
+                }
+                    });
+        </script>
+        <style>
+            *{padding: 0px;margin:0px;}
+            .knownledge_main{color: white;width:980px;height:740px;margin:0 auto;padding-top:6%;}
+            .swiper-container {
+                width: 760px;
+                height: 550px;
+                margin: 20px auto;
+            }
+            .swiper-slide {
+                font-size: 20px;    
+                padding-top: 5%;
+                padding-left:1%;
+            }
+            p{padding-top:14px;}
+            p img{margin-right:11px;box-shadow: 1px 2px 10px  #000000;}
+        </style>
+    </head>
+    <body>
+        <div class="knownledge_main">
+            <h1 style="margin:0 auto; width:200px;font-family: 幼圆;">员工风采</h1>
+            <div class="swiper-container animated zoomInDown">
+                <div class="swiper-wrapper">
+                    <!-- 科普知识的一小块内容 -->
+                    <div class="swiper-slide">
+                        <p>
+                            <a class="fancybox-effects-d" href="statics/images/mien/1_1.jpg" title="第一屏第一张的图片"><img src="statics/images/mien/1_1.png" alt="" /></a>
+                            <a class="fancybox-effects-d" href="statics/images/mien/1_2.jpg"><img src="statics/images/mien/1_2.png" alt="" /></a>
+                            <a class="fancybox-effects-d" href="statics/images/mien/1_3.jpg"><img src="statics/images/mien/1_3.png" alt="" /></a>
+                            <a class="fancybox-effects-d" href="statics/images/mien/1_4.jpg"><img src="statics/images/mien/1_4.png" alt="" /></a>
+                        </p>
+                        <p>
+                            <a class="fancybox-effects-d" href="statics/images/mien/1_5.jpg" title="第一屏第一张的图片"><img src="statics/images/mien/1_5.png" alt="" /></a>
+                            <a class="fancybox-effects-d" href="statics/images/mien/1_6.jpg"><img src="statics/images/mien/1_6.png" alt="" /></a>
+                            <a class="fancybox-effects-d" href="statics/images/mien/1_7.jpg"><img src="statics/images/mien/1_7.png" alt="" /></a>
+                            <a class="fancybox-effects-d" href="statics/images/mien/1_8.jpg"><img src="statics/images/mien/1_8.png" alt="" /></a>
+                        </p>
+                        <p>
+                            <a class="fancybox-effects-d" href="statics/images/mien/1_9.jpg" title="第一屏第一张的图片"><img src="statics/images/mien/1_9.png" alt="" /></a>
+                            <a class="fancybox-effects-d" href="statics/images/mien/1_10.jpg"><img src="statics/images/mien/1_10.png" alt="" /></a>
+                            <a class="fancybox-effects-d" href="statics/images/mien/1_11.jpg"><img src="statics/images/mien/1_11.png" alt="" /></a>
+                            <a class="fancybox-effects-d" href="statics/images/mien/1_12.jpg"><img src="statics/images/mien/1_12.png" alt="" /></a>
+                        </p>
+                    </div>
+                    <div class="swiper-slide">Slide 2</div>
+                    <div class="swiper-slide">Slide 3</div>
+                    <div class="swiper-slide">Slide 4</div>
+                    <div class="swiper-slide">Slide 5</div>
+                    <div class="swiper-slide">Slide 6</div>
+                    <div class="swiper-slide">Slide 7</div>
+                    <div class="swiper-slide">Slide 8</div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination red"></div>
+            </div>
+            <!--滑块切换结束-->
+        </div>
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+                pagination: '.swiper-pagination',
+                paginationClickable: true,
+                spaceBetween: 30,
+            });
+        </script>
+    </body>
+</html>

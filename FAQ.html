@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>常见问题</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no"/>
+        <!--<link rel="stylesheet" media="screen and (orientation:portrait)" href="statics/css/portrait-base.css" />-->
+        <script type="text/javascript" src="statics/js/jquery.min.js"></script>
+        <link type="text/css" rel="stylesheet" href="statics/css/animate.css"/>
+        <style>
+            *{margin:0px;padding:0px;}
+            body{background: url(statics/images/bg_faq.png) 0 0 no-repeat;}
+            .FAQ_main{font-size: 36px;color: white;width:980px;height:740px;margin:0 auto;padding-top:5%;}
+            .FAQ_main h5{text-align: center;font-family:幼圆;margin-bottom:50px;}
+            .question_card{width:875px;height:544px;margin: 0 auto;font-size:14px;}
+            .card_tab{background:url(statics/images/card_bg.png) 0 0 no-repeat;width:720px;height:510px;float:left;}
+            .card_tab ul{float:left;width:173px;height:360px;color:#666;list-style-type:none;color:black;}
+            .card_tab ul li{width:166px;height:38px;font:12px/40px 黑体;padding-left:7px;cursor: pointer;}
+            .card_tab ul li.current{background: url(statics/images/Interactive_listbg.png) 0 2px no-repeat;}
+            .box_tab{width:520px;height:445px;margin-right:15px;margin-top:5px;float:right;}
+            .box_tab div{width:485px;height:420px;margin:0 auto;padding-top: 10px;display: none;}
+            .box_tab div p{line-height:26px;margin-top:40px;}
+            .main_title{font:20px 幼圆;margin-left:40px;}
+            .doctot{float:right;animation-delay:0.5s;}
+        </style>
+    </head>
+    <body>
+        <div class="FAQ_main">
+            <h5>常见问题</h5>
+            <div class="question_card">
+                <div class="card_tab animated zoomInDown">
+                    <ul>
+                        <li class="current">1、为什么科学献血有益健康</li>
+                        <li>2、为什么输液要严把质量关</li>
+                        <li>3、哪些食物含铁较高</li>
+                    </ul> 
+                    <div class="box_tab">
+                        <div class="list_box" style="display:block">
+                            <img src="statics/images/num1.png"/>
+                            <span class="main_title">为什么科学献血有益健康</span>
+                            <p>
+                                O2O英文全称为Online To Offline，是一种如今国外已经<br/>
+                                比较成熟的商家模式，其含义是融合了线下商务的机会以及<br/>
+                                日趋成熟互联网营销结合在一起，让互联网成为线下交易的前台。这样线下服务就可以用线上（比如网上）来揽客，消费者可以用线上来筛选服务，还有成交可以在线结算，很快达到规模。
+                                <br/><br/>
+                                对于O2O用户来说，他们需要的并不是远距离的物品输送，而是在近距离内的线下商店的购物或服务体验。
+                            </p>
+                        </div>
+                        <div class="list_box">
+                            <img src="statics/images/num2.png"/>
+                            <span class="main_title">为什么输液要严把质量关</span>
+                            <p>
+                                O2O英文全称为Online To Offline，是一种如今国外已经<br/>
+                                比较成熟的商家模式，其含义是融合了线下商务的机会以及<br/>
+                                日趋成熟互联网营销结合在一起，让互联网成为线下交易的前台。这样线下服务就可以用线上（比如网上）来揽客，消费者可以用线上来筛选服务，还有成交可以在线结算，很快达到规模。
+                                <br/><br/>
+                                对于O2O用户来说，他们需要的并不是远距离的物品输送，而是在近距离内的线下商店的购物或服务体验。
+                            </p>
+                        </div>
+                        <div  class="list_box">
+                            <img src="statics/images/num3.png"/>
+                            <span class="main_title">哪些食物含铁较高</span>
+                            <p>
+                                O2O英文全称为Online To Offline，是一种如今国外已经<br/>
+                                比较成熟的商家模式，其含义是融合了线下商务的机会以及<br/>
+                                日趋成熟互联网营销结合在一起，让互联网成为线下交易的前台。这样线下服务就可以用线上（比如网上）来揽客，消费者可以用线上来筛选服务，还有成交可以在线结算，很快达到规模。
+                                <br/><br/>
+                                对于O2O用户来说，他们需要的并不是远距离的物品输送，而是在近距离内的线下商店的购物或服务体验。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="doctot animated fadeInLeft"><img src="statics/images/doctot.png"/></div>
+            </div>
+        </div>
+        <script>
+            $(".card_tab ul").find("li").click(function(){
+              $(this).addClass("current").siblings("li").removeClass();
+              $('.list_box').eq($(this).index()).css('display','block').addClass('animated rotateInUpLeft').siblings('.list_box').css('display','none');
+            });
+        </script>
+    </body>
+</html>
